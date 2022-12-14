@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buguer Castle</title>
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+  <!-- Progress Bar -->
+  <script src="js/progressbar.min.js"></script>
+  <!-- Parallax -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+	<style>
+		.whatsapp-link {
+			position: fixed;
+			width: 60px;
+			height: 60px;
+			bottom: 40px;
+			right: 40px;
+			background-color: #25d366;
+			color: #fff;
+			border-radius: 50px;
+			text-align: center;
+			font-size: 30px;
+			box-shadow: 1px 1px 2px #888;
+			z-index: 1000;
+		}
+ 
+		.fa-whatsapp {
+			margin-top: 16px;
+		}
+	</style>
+</head>
+<body>
+	<a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5599111112222" target="_blank">
+		<i class="fa fa-whatsapp"></i>
+	</a>
+  <header>
+    <div class="container" id="nav-container">
+      <!-- add essa class -->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" src="img/logo_burguer.png" alt="Buguer Castle"> Buguer Castle</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" id="home-menu" href="#">Pagina Inicial</span></a>
+            <a class="nav-item nav-link" id="about-menu" href="#">A Hamburgueria</a>
+            <a class="nav-item nav-link" id="services-menu" href="#">Cardápio</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <!-- slider -->
+      <div id="mainSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+          <li data-target="#mainSlider" data-slide-to="1"></li>
+          <li data-target="#mainSlider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/hambueguer_v1.jpg" class="d-block w-100" alt="Projetos de e-commerce">
+
+            <!-- tirar classe d-none -->
+
+            <div class="carousel-caption d-md-block">
+              <h2>Está em busca de Hamburguers saborosos?</h5>
+              <p>Então você achou o lugar certo ! !</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/hambueguer_v2.jpg" class="d-block w-100" alt="burguer2">
+            <div class="carousel-caption d-md-block">
+              <h2>Contamos com inumeras variedades de Hamburguers</h5>
+              <p>E molhos saborosos</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/hambueguer_v3.jpg" class="d-block w-100" alt="burguer3">
+            <div class="carousel-caption d-md-block">
+              <h2>Venha agora mesmo com seus amigos e familiares</h2>
+            </div>  
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <!-- sobre a hamburgueria -->
+      <div id="about-area">
+        <div class="container">
+            <div class="row">
+              <div class="col-12"> 
+                <h3 class="main-title">Burguer Castle</h3>
+              </div>
+              <div class="col-md-6">
+                <img class="img-fluid" src="img/carne.jpg" alt="carne">
+              </div>
+              <div class="col-md-6">
+                <h3 class="about-title">  Uma Hamburgueria pensada pra você</h3>
+                <p>Nossos Hamburguers são feitos com Blend elaborado por nós e moídos todos os dias. Fazemos os Burgers na Parrilla a carvão ou na chapa, onde fazemos o Smash Burger.</p>
+                <p>Todos nossos produtos são artesanais; os pães são feitos por nós todos os dias, assim como os molhos. O Bacon de barriga foi desenvolvido especialmente para nós. Os queijos, todos artesanais, são garimpados pelos quatro cantos do país.</p><br>
+                <p>Veja outros diferenciais:</p>  
+                <ul id="about-list">
+                  <li><i class="fas fa-check"></i> Espaço Climatizado</li>
+                  <li><i class="fas fa-check"></i> Área para crianças</li>
+                  <li><i class="fas fa-check"></i> Produtos artesanais</li>
+                  <li><i class="fas fa-check"></i> Promoções todas as quintas-feiras</li>
+                  <li><i class="fas fa-check"></i> Atendimento rápido</li>
+                </ul><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Cardápio -->
+      <div id="portfolio-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Conheça nossos Cardápio</h3>
+            </div>
+            <div class="col-md-12" id="filter-btn-box">
+              <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+              <button class="main-btn filter-btn" id="burguer-btn">Hamburguers</button>
+              <button class="main-btn filter-btn" id="bebidas-btn">Bebidas</button>
+              <button class="main-btn filter-btn" id="sobre-btn">Sobremesas</button>
+            </div>
+            <div class="col-md-4 project-box burguer">
+              <img src="img/burguer1.jpg" class="img-fluid" alt="burguer1">
+            </div>
+            <div class="col-md-4 project-box burguer">
+              <img src="img/burguer2.jpg" class="img-fluid" alt="burguer2 2">
+            </div>
+            <div class="col-md-4 project-box burguer">
+              <img src="img/burguer3.jpg" class="img-fluid" alt="burguer3 3">
+            </div>
+            <div class="col-md-4 project-box bebidas">
+              <img src="img/bebidas1.jpg" class="img-fluid" alt="bebidas1">
+            </div>
+            <div class="col-md-4 project-box bebidas">
+              <img src="img/bebidas2.jpg" class="img-fluid" alt="bebidas2 5">
+            </div>
+            <div class="col-md-4 project-box bebidas">
+              <img src="img/bebidas3.jpg" class="img-fluid" alt="bebidas3">
+            </div>
+            <div class="col-md-4 project-box sobre">
+              <img src="img/sobremesa1.jpg" class="img-fluid" alt="sobremesa1">
+            </div>
+            <div class="col-md-4 project-box sobre">
+              <img src="img/sobremesa2.jpg" class="img-fluid" alt="sobremesa2">
+            </div>
+            <div class="col-md-4 project-box sobre">
+              <img src="img/sobremesa3.jpg" class="img-fluid" alt="sobremesa3">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  
+    <div id="copy-area">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+              <p>Desenvolvido por <a href="https://www.instagram.com/gabrielnbr_/" target="_blank">Burguer  Castle</a> &copy; 2022</p>
+              
+            </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts do projeto -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>
